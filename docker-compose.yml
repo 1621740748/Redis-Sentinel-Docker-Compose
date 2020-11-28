@@ -1,12 +1,6 @@
 version: '3.7'
 
 services:
- 
-  app:
-    image: some-image
-    links:
-      - redis-sentinel
-     
   redis-master:
     image: redis:6-alpine
     volumes:
